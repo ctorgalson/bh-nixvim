@@ -4,6 +4,7 @@
       enable = true;
       filesystem = {
         hijackNetrwBehavior = "open_default";
+        useLibuvFileWatcher = true;
       };
     };
   };
