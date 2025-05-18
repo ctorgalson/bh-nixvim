@@ -3,7 +3,7 @@
   imports = [
     ./lua.nix
     ./keymaps.nix
-    ./colorshcmes/catppuccin.nix
+    ./colorschemes/catppuccin.nix
     ./plugins/blink-cmp.nix
     ./plugins/blink-emoji.nix
     ./plugins/bufferline.nix
