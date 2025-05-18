@@ -1,2 +1,2 @@
 # bh-nixvim
-Custom Nixos-based Neovim configuration using NVF
+Custom Nixos-based Neovim configuration using Nixvim.
