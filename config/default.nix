@@ -16,7 +16,9 @@
     ./plugins/neo-tree.nix
     ./plugins/nvim-ufo.nix
     ./plugins/nvim-web-devicons.nix
+    ./plugins/telescope.nix
     ./plugins/treesitter.nix
+    ./plugins/trouble.nix
     ./plugins/which-key.nix
   ];
 
