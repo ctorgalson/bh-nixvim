@@ -16,7 +16,7 @@
       action = "<cmd>Precognition toggle<cr>";
     }
     {
-      # Toggle on/off
+      # Toggle on until next motion
       mode = "n";
       key = "<leader>pp";
       action = "<cmd>Precognition peek<cr>";
