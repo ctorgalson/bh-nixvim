@@ -1,0 +1,5 @@
+{
+  plugins = {
+    modicator.enable = true;
+  };
+}
