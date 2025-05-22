@@ -8,6 +8,20 @@
       action = "<cmd>Neotree toggle<CR>";
     }
 
+    # Precognition
+    {
+      # Toggle on/off
+      mode = "n";
+      key = "<leader>pt";
+      action = "<cmd>Precognition toggle<cr>";
+    }
+    {
+      # Toggle on/off
+      mode = "n";
+      key = "<leader>pp";
+      action = "<cmd>Precognition peek<cr>";
+    }
+
     # Trouble
     {
       # Diagnostics
