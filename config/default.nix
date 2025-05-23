@@ -9,6 +9,7 @@
     ./plugins/bufferline.nix
     ./plugins/colorizer.nix
     ./plugins/comment.nix
+    ./plugins/dashboard.nix
     ./plugins/precognition.nix
     ./plugins/friendly-snippets.nix
     ./plugins/gitsigns-nvim.nix

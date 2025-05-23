@@ -1,5 +1,12 @@
 {self, ...}: {
   keymaps = [
+    # Dashboard
+    {
+      mode = "n";
+      key = "<leader>b";
+      action = "<cmd>Dashboard<CR>";
+    }
+
     # Neotree
     {
       # Toggle Neotree
