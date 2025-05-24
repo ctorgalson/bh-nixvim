@@ -18,6 +18,7 @@
     ./plugins/modicator.nix
     ./plugins/neo-tree.nix
     ./plugins/nvim-web-devicons.nix
+    ./plugins/snacks
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
     ./plugins/trouble.nix
@@ -31,7 +32,7 @@
     maplocalleader = " ";
   };
 
-  globalOpts = {
+  opts = {
     breakindent = true;
     clipboard = "unnamedplus";
     colorcolumn = "80";
