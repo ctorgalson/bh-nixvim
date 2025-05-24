@@ -17,7 +17,6 @@
     ./plugins/lualine.nix
     ./plugins/modicator.nix
     ./plugins/neo-tree.nix
-    ./plugins/nvim-ufo.nix
     ./plugins/nvim-web-devicons.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
