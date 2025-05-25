@@ -7,28 +7,6 @@
       action = "<cmd>Dashboard<CR>";
     }
 
-    # Neotree
-    {
-      # Toggle Neotree
-      mode = "n";
-      key = "<leader>e";
-      action = "<cmd>Neotree toggle<CR>";
-    }
-
-    # Precognition
-    {
-      # Toggle on/off
-      mode = "n";
-      key = "<leader>pt";
-      action = "<cmd>Precognition toggle<cr>";
-    }
-    {
-      # Toggle on until next motion
-      mode = "n";
-      key = "<leader>pp";
-      action = "<cmd>Precognition peek<cr>";
-    }
-
     # Resize splits.
     {
       # Increase split width
