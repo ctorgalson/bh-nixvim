@@ -1,12 +1,5 @@
 {self, ...}: {
   keymaps = [
-    # Dashboard
-    {
-      mode = "n";
-      key = "<leader>b";
-      action = "<cmd>Dashboard<CR>";
-    }
-
     # Resize splits.
     {
       # Increase split width
