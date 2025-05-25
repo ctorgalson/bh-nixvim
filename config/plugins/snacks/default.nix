@@ -1,6 +1,7 @@
 {
   imports = [
     ./bigfile.nix
+    ./dashboard.nix
   ];
 
   plugins = {
