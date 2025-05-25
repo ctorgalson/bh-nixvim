@@ -2,6 +2,7 @@
   imports = [
     ./bigfile.nix
     ./dashboard.nix
+    ./picker
   ];
 
   plugins = {
