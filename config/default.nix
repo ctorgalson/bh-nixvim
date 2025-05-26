@@ -18,6 +18,7 @@
     ./plugins/neo-tree.nix
     ./plugins/nvim-web-devicons.nix
     ./plugins/snacks
+    ./plugins/statuscol.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
     ./plugins/which-key.nix
@@ -48,6 +49,30 @@
     smartindent = true; # Smart auto-indenting
     softtabstop = 2;    # Edit as if tabs are 2 spaces
     tabstop = 2;        # Display tabs as 2 spaces wide
+
+    # Folding
+    fillchars = {
+      diff = "╱";
+      eob = " ";
+      fold = " ";
+      foldclose = "";
+      foldopen = "";
+      foldsep = " ";
+      horiz = "━";
+      horizup = "┻";
+      horizdown = "┳";
+      msgsep = "‾";
+      vert = "┃";
+      vertleft = "┫";
+      vertright = "┣";
+      verthoriz = "╋";
+    };
+    foldcolumn = "1";
+    foldenable = true;
+    foldlevel = 99; # Folds with a level higher than this number will be closed
+    foldlevelstart = -1;
+    foldmethod = "expr";
+    foldexpr = ''v:lua.vim.treesitter.foldexpr()'';
   };
 
   viAlias = true;
