@@ -56,19 +56,19 @@
     {
       mode = "n";
       key = "<leader>dc";
-      action = "<cmd>!ddev drush cr";
+      action = ":!ddev drush cr";
       options.desc = "Run 'ddev drush cr'";
     }
     {
       mode = "n";
       key = "<leader>du";
-      action = "<cmd>!ddev drush updb";
+      action = ":!ddev drush updb";
       options.desc = "Run 'ddev drush updb'";
     }
     {
       mode = "n";
       key = "<leader>di";
-      action = "<cmd>!ddev drush cim";
+      action = ":!ddev drush cim";
       options.desc = "Run 'ddev drush config:import'";
     }
     {
@@ -82,19 +82,19 @@
     {
       mode = "n";
       key = "<leader>Ds";
-      action = "<cmd>!ddev start";
+      action = ":!ddev start";
       options.desc = "Run 'ddev start'";
     }
     {
       mode = "n";
       key = "<leader>DS";
-      action = "<cmd>!ddev stop";
+      action = ":!ddev stop";
       options.desc = "Run 'ddev stop'";
     }
     {
       mode = "n";
       key = "<leader>DP";
-      action = "<cmd>!ddev poweroff";
+      action = ":!ddev poweroff";
       options.desc = "Run 'ddev poweroff'";
     }
 
