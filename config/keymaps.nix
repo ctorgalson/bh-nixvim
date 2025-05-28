@@ -52,7 +52,7 @@
       options.desc = "Move to pane on right";
     }
 
-    # Drupal actions (assumes DDev is in use).
+    # Drush actions (assumes DDev is in use).
     {
       mode = "n";
       key = "<leader>dc";
@@ -74,8 +74,14 @@
     {
       mode = "n";
       key = "<leader>de";
-      action = "<cmd>!ddev drush config:export";
+      action = ":!ddev drush config:export";
       options.desc = "Run 'ddev drush config:export'";
+    }
+    {
+      mode = "n";
+      key = "<leader>dq";
+      action = ":!ddev drush sql:cli";
+      options.desc = "Run 'ddev drush sql:cli'";
     }
 
     # DDev actions.
