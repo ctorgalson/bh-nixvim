@@ -9,6 +9,12 @@
       settings = {
         picker = {
           enabled = true;
+          sources = {
+            explorer = {
+              focus = "input";
+              auto_close = true;
+            };
+          };
         };
         actions = {
           calculate_file_truncate_width.__raw = ''
@@ -116,14 +122,14 @@
     #   <C-v> to open files in new tabs/splits (like Neotree). Neotree works
     #   so well that we're not replacing it unless we can get everything it
     #   does to work.
-    # {
-    #   mode = "n";
-    #   key = "<leader>fe";
-    #   action = ''<cmd>lua Snacks.explorer()<cr>'';
-    #   options = {
-    #     desc = "File Explorer";
-    #   };
-    # }
+    {
+      mode = "n";
+      key = "<leader>fe";
+      action = ''<cmd>lua Snacks.explorer()<cr>'';
+      options = {
+        desc = "File Explorer";
+      };
+    }
     {
       mode = "n";
       key = "<leader>ff";

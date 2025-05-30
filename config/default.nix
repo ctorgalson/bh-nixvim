@@ -15,7 +15,7 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/modicator.nix
-    ./plugins/neo-tree.nix
+    #./plugins/neo-tree.nix
     ./plugins/nvim-web-devicons.nix
     ./plugins/snacks
     ./plugins/statuscol.nix
