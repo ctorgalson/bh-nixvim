@@ -15,7 +15,6 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/modicator.nix
-    #./plugins/neo-tree.nix
     ./plugins/nvim-web-devicons.nix
     ./plugins/snacks
     ./plugins/statuscol.nix
@@ -25,6 +24,10 @@
   ];
 
   colorscheme = "catppuccin-mocha";
+
+  extraConfigLua = ''
+    vim.api.nvim_set_hl(0, "FoldColumn", { fg = "#b4befe" })
+  '';
 
   globals = {
     mapleader = " ";
@@ -55,8 +58,8 @@
       diff = "╱";
       eob = " ";
       fold = " ";
-      foldclose = "";
-      foldopen = "";
+      foldclose = "󰅂";
+      foldopen = "󰅀";
       foldsep = " ";
       horiz = "━";
       horizup = "┻";
