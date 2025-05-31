@@ -3,38 +3,33 @@
     statuscol = {
       enable = true;
       settings = {
-        relculright = true;
         segments = [
           {
-            hl = "FoldColumn";
+            # Fold column
             text = [ { __raw = "require('statuscol.builtin').foldfunc"; } ];
             click = "v:lua.ScFa";
           }
           {
-            text = null;
+            # Line num column
+            text = [ { __raw = "require('statuscol.builtin').lnumfunc"; } ];
+            click = "v:lua.ScLa";
+          }
+          {
+            # Git signs column
             sign = {
-              name = [ ".*" ];
-              namespace = [ ".*" ];
-              text = [ ".*" ];
-              maxwidth = 2;
+              namespace = [ "gitsigns" ];
+              maxwidth = 1;
               auto = true;
+              wrap = true;
             };
             click = "v:lua.ScSa";
           }
           {
-            text = [
-              " "
-              { __raw = "require('statuscol.builtin').lnumfunc"; }
-              " "
-            ];
-            click = "v:lua.ScLa";
-          }
-          {
-            text = null;
+            # Diagnostic column
             sign = {
-              name = [ ".*" ];
-              maxwidth = 2;
-              colwidth = 1;
+              namespace = ["nvim.vim.lsp.nixd.1.diagnostic.signs"];
+              maxwidth = 1;
+              colwidth = 2;
               auto = true;
               wrap = true;
             };
