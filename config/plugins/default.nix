@@ -1,0 +1,21 @@
+{
+  imports = [
+    ./blink-cmp.nix
+    ./blink-emoji.nix
+    ./bufferline.nix
+    ./colorizer.nix
+    ./comment.nix
+    ./precognition.nix
+    ./friendly-snippets.nix
+    ./gitsigns-nvim.nix
+    ./lsp.nix
+    ./lualine.nix
+    ./modicator.nix
+    ./nvim-web-devicons.nix
+    ./snacks
+    ./statuscol.nix
+    ./telescope.nix
+    ./treesitter.nix
+    ./which-key.nix
+  ];
+}
