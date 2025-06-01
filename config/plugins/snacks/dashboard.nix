@@ -1,19 +1,4 @@
 {
-  extraConfigLua = ''
-    vim.api.nvim_create_autocmd("VimEnter", {
-      callback = function()
-        if vim.fn.argc() > 0 then
-          -- Close dashboard buffer if it exists
-          for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-            if vim.bo[buf].filetype == "snacks_dashboard" then
-              vim.api.nvim_buf_delete(buf, { force = true })
-              break
-            end
-          end
-        end
-      end,
-    })
-  '';
   plugins.snacks = {
     settings = {
       dashboard = {
