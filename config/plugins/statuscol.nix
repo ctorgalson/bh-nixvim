@@ -27,7 +27,8 @@
           {
             # Diagnostic column
             sign = {
-              namespace = ["nvim.vim.lsp.nixd.1.diagnostic.signs"];
+              # namespace = ["nvim.vim.lsp.nixd.1.diagnostic.signs"];
+              namespace = ["vim.lsp.nixd.1"];
               maxwidth = 1;
               colwidth = 2;
               auto = true;
