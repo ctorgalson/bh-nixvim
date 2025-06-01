@@ -11,8 +11,34 @@
           enabled = true;
           sources = {
             explorer = {
-              focus = "input";
-              auto_close = true;
+              # focus = "input";
+              auto_close = false;
+              win = {
+                input = {
+                  keys = {
+                    "<C-t>" = {
+                      __raw = ''"tab"'';
+                      mode = [ "n" "i" ];
+                    };
+                    "<C-;>" = {
+                      __raw = ''"terminal"'';
+                      mode = [ "n" "i" ];
+                    };
+                  };
+                };
+                list = {
+                  keys = {
+                    "<C-t>" = {
+                      __raw = ''"tab"'';
+                      mode = [ "n" "i" ];
+                    };
+                    "<C-;>" = {
+                      __raw = ''"terminal"'';
+                      mode = [ "n" "i" ];
+                    };
+                  };
+                };
+              };
             };
           };
         };

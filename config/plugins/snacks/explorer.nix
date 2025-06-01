@@ -5,25 +5,6 @@
         explorer = {
           enabled = true;
           replace_netrw = true;
-          ui_select = true;
-          win = {
-            input = {
-              keys = {
-                "<C-t>" = { 
-                  __raw = ''"tab"''; 
-                  mode = [ "n" "i" ]; 
-                };
-              };
-            };
-            list = {
-              keys = {
-                "<C-t>" = { 
-                  __raw = ''"tab"''; 
-                  mode = [ "n" "i" ]; 
-                };
-              };
-            };
-          };
         };
       };
     };

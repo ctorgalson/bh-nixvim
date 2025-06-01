@@ -26,7 +26,7 @@
   colorscheme = "catppuccin-mocha";
 
   extraConfigLua = ''
-    vim.api.nvim_set_hl(0, "FoldColumn", { fg = "#b4befe" })
+    vim.api.nvim_set_hl(0, "FoldColumn", { fg = "#9399b2" })
   '';
 
   globals = {
