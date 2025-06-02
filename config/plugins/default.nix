@@ -2,6 +2,7 @@
   imports = [
     ./blink-cmp.nix
     ./blink-emoji.nix
+    ./blink-ripgrep.nix
     ./bufferline.nix
     ./colorizer.nix
     ./comment.nix
