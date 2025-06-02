@@ -13,17 +13,25 @@
             "path"
             "snippets"
             "buffer"
+            "spell"
             "ripgrep"
             "emoji"
           ];
           providers = {
+            # dictionary = {
+            #   module = "blink-cmp-dictionary";
+            #   name = "Dictonary";
+            #   score_offset = 100;
+            #   min_keyword_length = 3;
+            #   opts = { };
+            # };
             emoji = {
               module = "blink-emoji";
               name = "Emoji";
               score_offset = 15;
               # Optional configurations
               opts = {
-                # insert = true;
+                insert = true;
               };
             };
             ripgrep = {
@@ -45,6 +53,12 @@
                 debug = false;
               };
             };              
+            spell = {
+              module = "blink-cmp-spell";
+              name = "Spell";
+              score_offset = 100;
+              opts = { };
+            };
           };
         };
       };

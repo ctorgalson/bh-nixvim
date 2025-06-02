@@ -1,6 +1,7 @@
 {
   imports = [
     ./blink-cmp.nix
+    ./blink-cmp-spell.nix
     ./blink-emoji.nix
     ./blink-ripgrep.nix
     ./bufferline.nix
