@@ -7,6 +7,7 @@
     ./opts.nix
     ./colorschemes
     ./plugins
+    ./extraPlugins
   ];
 
   colorscheme = "catppuccin-mocha";
