@@ -3,7 +3,7 @@
     blink-cmp-spell.enable = true;
   };
   opts = {
-    spell = true;
+    spell = false;
     spelllang = "en_ca";
   };
   keymaps = [
