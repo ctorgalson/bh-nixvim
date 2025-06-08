@@ -36,6 +36,10 @@
             };
             click = "v:lua.ScSa";
           }
+          {
+            # Empty space column.
+            text = [ " " ];
+          }
         ];
       };
     };
