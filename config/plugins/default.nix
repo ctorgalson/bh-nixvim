@@ -19,5 +19,6 @@
     ./telescope.nix
     ./treesitter.nix
     ./which-key.nix
+    ./whitespace.nix
   ];
 }
