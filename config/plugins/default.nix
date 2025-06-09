@@ -18,6 +18,7 @@
     ./statuscol.nix
     ./telescope.nix
     ./treesitter.nix
+    ./trim.nix
     ./which-key.nix
   ];
 }
