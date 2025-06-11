@@ -10,18 +10,6 @@
             click = "v:lua.ScFa";
           }
           {
-            # Diagnostic column
-            sign = {
-              # namespace = [ "nvim.vim.lsp.nixd.1.diagnostic.signs" ];
-              namespace = [ "vim.lsp.nixd.1" ];
-              maxwidth = 1;
-              colwidth = 2;
-              auto = true;
-              wrap = true;
-            };
-            click = "v:lua.ScSa";
-          }
-          {
             # Line num column
             text = [ { __raw = "require('statuscol.builtin').lnumfunc"; } ];
             click = "v:lua.ScLa";
@@ -32,8 +20,22 @@
               namespace = [ "gitsigns" ];
               colwidth = 1;
               maxwidth = 1;
-              auto = true;
-              wrap = true;
+              auto = {
+                __raw = "\" \"";
+              };
+              wrap = false;
+            };
+            click = "v:lua.ScSa";
+          }
+          {
+            # Diagnostic column
+            sign = {
+              text = [ ".*" ];
+              maxwidth = 1;
+              colwidth = 1;
+              auto = {
+                __raw = "\" \"";
+              };
             };
             click = "v:lua.ScSa";
           }
