@@ -2,7 +2,7 @@
   plugins.snacks = {
     settings = {
       dashboard = {
-        enabled = true;
+        enabled = false;
         sections = [
           {
             header = ''
@@ -43,4 +43,12 @@
       };
     };
   };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>;";
+      action = "<cmd>lua Snacks.dashboard()<CR>";
+      options.desc = "Decrease split width";
+    }
+  ];
 }
