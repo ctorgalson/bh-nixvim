@@ -47,6 +47,17 @@
         };
         signature = {
           enabled = true;
+          trigger = {
+            blocked_trigger_characters = [];
+            blocked_retrigger_characters = [];
+            show_delay_ms = 200;
+            hide_delay_ms = 4000;
+          };
+          window = {
+            border = "rounded";
+            winhighlight = "Normal:BlinkCmpSignatureHelp,FloatBorder:BlinkCmpSignatureHelpBorder,Cursor:BlinkCmpSignatureHelp";
+            scrollbar = true;
+          };
         };
         sources = {
           default = [
