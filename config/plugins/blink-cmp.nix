@@ -9,8 +9,14 @@
           use_nvim_cmp_as_default = true;
         };
         cmdline = {
+          enabled = true;
           keymap = {
-            preset = "enter";
+            preset = "super-tab";
+          };
+          completion = {
+            menu = {
+              auto_show = true;
+            };
           };
         };
         completion = {
@@ -25,6 +31,16 @@
           documentation = {
             auto_show = true;
           };
+          menu = {
+            auto_show = true;
+            border = "rounded";
+            scrollbar = true;
+
+            draw = {
+              padding = 1;
+              gap = 1;
+            };
+          };
         };
         keymap = {
           preset = "super-tab";
@@ -38,36 +54,33 @@
             "path"
             "snippets"
             "buffer"
-            "spell"
-            "ripgrep"
             "emoji"
+            "ripgrep"
+            "spell"
           ];
           cmdline = [ ];
           providers = {
-            # dictionary = {
-            #   module = "blink-cmp-dictionary";
-            #   name = "Dictonary";
-            #   score_offset = 100;
-            #   min_keyword_length = 3;
-            #   opts = { };
-            # };
+            buffer = {
+              max_items = 10;
+              score_offset = -10;
+            };
+
             emoji = {
               module = "blink-emoji";
               name = "Emoji";
-              score_offset = 15;
-              # Optional configurations
               opts = {
                 insert = true;
               };
             };
+
             ripgrep = {
               async = true;
               module = "blink-ripgrep";
               name = "Ripgrep";
-              score_offset = 100;
+              score_offset = -10;
               opts = {
                 prefix_min_len = 3;
-                context_size = 5;
+                context_size = 3;
                 max_filesize = "1M";
                 project_root_marker = ".git";
                 project_root_fallback = true;
@@ -78,12 +91,12 @@
                 additional_paths = {};
                 debug = false;
               };
-            };              
+              max_items = 10;
+            };
+
             spell = {
               module = "blink-cmp-spell";
               name = "Spell";
-              score_offset = 100;
-              opts = { };
             };
           };
         };
