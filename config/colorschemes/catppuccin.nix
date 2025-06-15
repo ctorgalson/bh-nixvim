@@ -20,7 +20,7 @@
           indentscope_color = "";
         };
         notify = false;
-        nvimtree = true;
+        # nvimtree = true;
         treesitter = true;
       };
       no_italic = true;

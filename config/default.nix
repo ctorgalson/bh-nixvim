@@ -13,6 +13,15 @@
   colorscheme = "catppuccin-mocha";
 
   extraConfigLua = ''
+    -- Toggle for :set background
+    function ToggleBackground()
+      if vim.o.background == 'dark' then
+        vim.o.background = 'light'
+      else
+        vim.o.background = 'dark'
+      end
+    end
+
     -- Filetype-specific indentation settings
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "go",
