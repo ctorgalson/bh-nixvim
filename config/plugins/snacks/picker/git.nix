@@ -8,6 +8,7 @@
         desc = "Find Git Files";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gB";
@@ -16,6 +17,7 @@
         desc = "Find git branches";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gC";
@@ -24,6 +26,7 @@
         desc = "Find git commits";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gs";
@@ -32,6 +35,7 @@
         desc = "Find git status";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gS";
@@ -40,6 +44,7 @@
         desc = "Find git stashes";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gl";
@@ -48,6 +53,7 @@
         desc = "Git Log";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gL";
@@ -56,6 +62,7 @@
         desc = "Git Log Line";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gd";
@@ -64,6 +71,7 @@
         desc = "Git Diff (Hunks)";
       };
     }
+
     {
       mode = "n";
       key = "<leader>gf";

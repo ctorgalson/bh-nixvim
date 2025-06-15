@@ -8,6 +8,7 @@
         desc = "Find buffer diagnostics";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fD";
@@ -16,6 +17,7 @@
         desc = "Find workspace diagnostics";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fs";
@@ -24,6 +26,7 @@
         desc = "Find lsp document symbols";
       };
     }
+
     {
       mode = "n";
       key = "<leader>ld";
@@ -32,6 +35,7 @@
         desc = "Goto Definition";
       };
     }
+
     {
       mode = "n";
       key = "<leader>li";
@@ -40,6 +44,7 @@
         desc = "Goto Implementation";
       };
     }
+
     {
       mode = "n";
       key = "<leader>lD";
@@ -48,6 +53,7 @@
         desc = "Find references";
       };
     }
+
     {
       mode = "n";
       key = "<leader>lt";
@@ -65,6 +71,7 @@
         desc = "Goto Definition";
       };
     }
+
     {
       mode = "n";
       key = "gD";
@@ -73,6 +80,7 @@
         desc = "Goto Declaration";
       };
     }
+
     {
       mode = "n";
       key = "gr";
@@ -82,6 +90,7 @@
         nowait = true;
       };
     }
+
     {
       mode = "n";
       key = "gI";
@@ -90,6 +99,7 @@
         desc = "Goto Implementation";
       };
     }
+
     {
       mode = "n";
       key = "gy";

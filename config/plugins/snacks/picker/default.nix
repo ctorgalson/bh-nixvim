@@ -9,7 +9,10 @@
       settings = {
         picker = {
           enabled = true;
-          sources = {
+          layout = {
+            preset = "vertical";
+          };
+sources = {
             explorer = {
               # focus = "input";
               auto_close = false;
@@ -71,16 +74,6 @@
             '';
           };
         };
-        layouts = {
-          select = {
-            layout = {
-              relative = "cursor";
-              width = 70;
-              min_width = 0;
-              row = 1;
-            };
-          };
-        };
       };
     };
   };
@@ -94,6 +87,7 @@
         desc = "Smart Find Files";
       };
     }
+
     {
       mode = "n";
       key = "<leader>:";
@@ -102,15 +96,16 @@
         desc = "Command History";
       };
     }
-    # not convinced this is useful
-    # {
-    #   mode = "n";
-    #   key = "<leader>fa";
-    #   action = ''<cmd>lua Snacks.picker.autocmds()<cr>'';
-    #   options = {
-    #     desc = "Find autocmds";
-    #   };
-    # }
+
+    {
+      mode = "n";
+      key = "<leader>fa";
+      action = ''<cmd>lua Snacks.picker.autocmds()<cr>'';
+      options = {
+        desc = "Find autocmds";
+      };
+    }
+
     {
       mode = "n";
       key = "<leader>fb";
@@ -119,6 +114,7 @@
         desc = "Find buffers";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fc";
@@ -127,6 +123,7 @@
         desc = "Find commands";
       };
     }
+
     # not sure if this makes sense on nixos?
     # {
     #   mode = "n";
@@ -144,10 +141,7 @@
     #     silent = true;
     #   };
     # }
-    # TODO: explorer looks good, but needs some commands like <C-t>, <C-S>,
-    #   <C-v> to open files in new tabs/splits (like Neotree). Neotree works
-    #   so well that we're not replacing it unless we can get everything it
-    #   does to work.
+
     {
       mode = "n";
       key = "<leader>fe";
@@ -156,6 +150,7 @@
         desc = "File Explorer";
       };
     }
+
     {
       mode = "n";
       key = "<leader>ff";
@@ -164,6 +159,7 @@
         desc = "Find files";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fF";
@@ -172,6 +168,7 @@
         desc = "Find files (All files)";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fh";
@@ -180,6 +177,7 @@
         desc = "Find help tags";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fk";
@@ -188,6 +186,7 @@
         desc = "Find keymaps";
       };
     }
+
     # not set up for this
     # {
     #   mode = "n";
@@ -197,6 +196,7 @@
     #     desc = "Find man pages";
     #   };
     # }
+
     {
       mode = "n";
       key = "<leader>fo";
@@ -205,6 +205,7 @@
         desc = "Find old files";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fO";
@@ -213,6 +214,7 @@
         desc = "Find Smart (Frecency)";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fp";
@@ -221,6 +223,7 @@
         desc = "Find projects";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fq";
@@ -229,6 +232,7 @@
         desc = "Find quickfix";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fr";
@@ -237,7 +241,8 @@
         desc = "Find registers";
       };
     }
-    # not working
+
+    # not working: dictionary contains about twelve words.
     # {
     #   mode = "n";
     #   key = "<leader>fS";
@@ -246,6 +251,7 @@
     #     desc = "Find spelling suggestions";
     #   };
     # }
+
     # todo_comments doesn't exist?
     # {
     #   mode = "n";
@@ -255,6 +261,7 @@
     #     desc = "Find TODOs";
     #   };
     # }
+
     {
       mode = "n";
       key = "<leader>fT";
@@ -263,6 +270,7 @@
         desc = "Find theme";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fu";
@@ -271,6 +279,7 @@
         desc = "Undo History";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fw";
@@ -279,6 +288,7 @@
         desc = "Live grep";
       };
     }
+
     {
       mode = "n";
       key = "<leader>fW";
@@ -287,6 +297,7 @@
         desc = "Live grep (All files)";
       };
     }
+
     {
       mode = "n";
       key = "<leader>f'";
@@ -295,6 +306,7 @@
         desc = "Find marks";
       };
     }
+
     {
       mode = "n";
       key = "<leader>f/";
@@ -303,6 +315,7 @@
         desc = "Fuzzy find in current buffer";
       };
     }
+
     {
       mode = "n";
       key = "<leader>f?";
@@ -311,6 +324,7 @@
         desc = "Fuzzy find in open buffers";
       };
     }
+
     {
       mode = "n";
       key = "<leader>f<CR>";
@@ -331,6 +345,7 @@
         desc = "Search Word (visual or cursor)";
       };
     }
+
     {
       mode = "n";
       key = "<leader>X";
