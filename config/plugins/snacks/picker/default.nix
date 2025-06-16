@@ -12,7 +12,7 @@
           layout = {
             preset = "vertical";
           };
-sources = {
+          sources = {
             explorer = {
               # focus = "input";
               auto_close = false;
@@ -51,7 +51,7 @@ sources = {
               local width = self.list.win:size().width
               self.opts.formatters.file.truncate = width - 6
             end
-          '';
+            '';
         };
         win = {
           list = {
@@ -59,19 +59,19 @@ sources = {
               function(self)
                 self:execute 'calculate_file_truncate_width'
               end
-            '';
+              '';
           };
           preview = {
             on_buf.__raw = ''
               function(self)
                 self:execute 'calculate_file_truncate_width'
               end
-            '';
+              '';
             on_close.__raw = ''
               function(self)
                 self:execute 'calculate_file_truncate_width'
               end
-            '';
+              '';
           };
         };
       };
