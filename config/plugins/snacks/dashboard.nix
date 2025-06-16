@@ -48,7 +48,7 @@
       mode = "n";
       key = "<leader>;";
       action = "<cmd>lua Snacks.dashboard()<CR>";
-      options.desc = "Decrease split width";
+      options.desc = "Toggle dashboard";
     }
   ];
 }

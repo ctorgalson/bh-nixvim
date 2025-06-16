@@ -4,7 +4,6 @@
       settings = {
         explorer = {
           enabled = true;
-          replace_netrw = true;
         };
       };
     };
@@ -13,10 +12,8 @@
     {
       mode = "n";
       key = "<leader>e";
-      action = ''<cmd>lua Snacks.explorer()<cr>'';
-      options = {
-        desc = "File Explorer";
-      };
+      action = "<cmd>lua Snacks.explorer()<CR>";
+      options.desc = "File Explorer";
     }
   ];
 }

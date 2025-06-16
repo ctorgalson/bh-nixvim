@@ -1,6 +1,19 @@
 {
   plugins = {
-    whitespace.enable = true;
+    whitespace = {
+      enable = true;
+      settings = {
+        ignored_filetypes = [
+          "blink-cmp-menu"
+          "blink-cmp-signature"
+          "checkhealth"
+          "fzf"
+          "snacks_dashboard"
+          "TelescopePrompt"
+        ];
+        return_cursor = false;
+      };
+    };
   };
 }
 
