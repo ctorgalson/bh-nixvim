@@ -1,5 +1,10 @@
 # @see https://nix-community.github.io/nixvim/plugins/blink-cmp/index.html
 {
+  imports = [
+    ./blink-cmp-spell.nix
+    ./blink-emoji.nix
+  ];
+
   plugins = {
     blink-cmp = {
       enable = true;
@@ -66,7 +71,7 @@
             "snippets"
             "buffer"
             "emoji"
-            "ripgrep"
+            # "ripgrep"
             "spell"
           ];
           cmdline = [ ];
@@ -74,40 +79,6 @@
             buffer = {
               max_items = 10;
               score_offset = -10;
-            };
-
-            emoji = {
-              module = "blink-emoji";
-              name = "Emoji";
-              opts = {
-                insert = true;
-              };
-            };
-
-            ripgrep = {
-              async = true;
-              module = "blink-ripgrep";
-              name = "Ripgrep";
-              score_offset = -10;
-              opts = {
-                prefix_min_len = 3;
-                context_size = 3;
-                max_filesize = "1M";
-                project_root_marker = ".git";
-                project_root_fallback = true;
-                search_casing = "--ignore-case";
-                additional_rg_options = {};
-                fallback_to_regex_highlighting = true;
-                ignore_paths = {};
-                additional_paths = {};
-                debug = false;
-              };
-              max_items = 10;
-            };
-
-            spell = {
-              module = "blink-cmp-spell";
-              name = "Spell";
             };
           };
         };
