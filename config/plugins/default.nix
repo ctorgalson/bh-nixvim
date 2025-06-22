@@ -10,6 +10,7 @@
     ./lsp.nix
     ./lualine.nix
     ./modicator.nix
+    ./nvim-autopairs.nix
     ./nvim-web-devicons.nix
     ./snacks
     ./statuscol.nix
