@@ -34,7 +34,11 @@
             };
           };
           documentation = {
-            auto_show = true;
+            auto_show = false;
+            window = {
+              border = "rounded";
+              scrollbar = true;
+            };
           };
           menu = {
             auto_show = true;
@@ -49,6 +53,9 @@
         };
         keymap = {
           preset = "super-tab";
+          "<C-space>" = [ "show_documentation" "fallback" ];
+          "<C-u>" = [ "scroll_documentation_up" "fallback" ];
+          "<C-d>" = [ "scroll_documentation_down" "fallback" ];
         };
         signature = {
           enabled = true;
