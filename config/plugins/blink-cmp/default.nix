@@ -38,7 +38,6 @@
             auto_show = false;
             window = {
               border = "rounded";
-              scrollbar = true;
             };
           };
           menu = {
@@ -79,7 +78,6 @@
             "snippets"
             "buffer"
             "emoji"
-            # "ripgrep"
             "spell"
           ];
           cmdline = [ ];

@@ -23,10 +23,6 @@
           cmp = true;
           gitsigns = true;
           # lualine
-          mini = {
-            enabled = true;
-            indentscope_color = "";
-          };
           native_lsp = {
             enabled = true;
           };
