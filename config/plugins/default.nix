@@ -8,6 +8,7 @@
     ./friendly-snippets.nix
     ./gitsigns-nvim.nix
     ./lsp.nix
+    ./lsp-lines.nix
     ./lualine.nix
     ./modicator.nix
     ./nvim-autopairs.nix
