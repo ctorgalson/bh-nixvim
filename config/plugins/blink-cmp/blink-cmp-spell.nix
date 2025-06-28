@@ -1,3 +1,5 @@
+# @see https://github.com/ribru17/blink-cmp-spell/
+# @see https://nix-community.github.io/nixvim/plugins/blink-cmp-spell/index.html
 {
   plugins = {
     blink-cmp-spell.enable = true;

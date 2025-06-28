@@ -1,3 +1,5 @@
+# @see https://github.com/nvim-lualine/lualine.nvim
+# @see https://nix-community.github.io/nixvim/plugins/lualine/index.html
 {
   plugins = {
     lualine = {

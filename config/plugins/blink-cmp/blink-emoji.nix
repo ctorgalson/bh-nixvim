@@ -1,3 +1,5 @@
+# @see https://github.com/moyiz/blink-emoji.nvim/
+# @see https://nix-community.github.io/nixvim/plugins/blink-emoji/index.html
 {
   plugins = {
     blink-emoji.enable = true;

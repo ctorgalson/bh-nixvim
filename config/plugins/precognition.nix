@@ -1,3 +1,5 @@
+# @see https://github.com/tris203/precognition.nvim/
+# @see https://nix-community.github.io/nixvim/plugins/precognition/index.html
 {
   plugins = {
     precognition = {

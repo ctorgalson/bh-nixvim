@@ -1,3 +1,4 @@
+# @see https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md
 {
   plugins.snacks = {
     settings = {

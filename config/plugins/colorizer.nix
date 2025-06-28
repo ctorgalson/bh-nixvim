@@ -1,3 +1,5 @@
+# @see https://github.com/catgoose/nvim-colorizer.lua/
+# @see https://nix-community.github.io/nixvim/plugins/colorizer/index.html
 {
   plugins = {
     colorizer = {

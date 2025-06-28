@@ -12,11 +12,11 @@
     ./lualine.nix
     ./modicator.nix
     ./nvim-autopairs.nix
-    ./nvim-web-devicons.nix
     ./snacks
     ./statuscol.nix
     ./telescope.nix
     ./treesitter.nix
+    ./web-devicons.nix
     ./which-key.nix
     ./whitespace.nix
   ];

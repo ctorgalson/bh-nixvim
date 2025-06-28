@@ -1,3 +1,5 @@
+# @see https://github.com/johnfrankmorgan/whitespace.nvim/
+# @see https://nix-community.github.io/nixvim/plugins/whitespace/index.html
 {
   plugins = {
     whitespace = {

@@ -1,3 +1,5 @@
+# @see https://github.com/akinsho/bufferline.nvim/
+# @see https://nix-community.github.io/nixvim/plugins/bufferline/index.html
 {
   plugins = {
     bufferline = {

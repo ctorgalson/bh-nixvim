@@ -1,3 +1,4 @@
+# @see https://github.com/folke/snacks.nvim/blob/main/docs/explorer.md
 {
   plugins = {
     snacks = {

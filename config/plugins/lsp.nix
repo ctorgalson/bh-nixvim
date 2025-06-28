@@ -1,3 +1,5 @@
+# @see https://github.com/neovim/nvim-lspconfig/
+# @see https://nix-community.github.io/nixvim/plugins/lsp/index.html
 {
   plugins = {
     lsp = {

@@ -1,3 +1,5 @@
+# @see https://github.com/luukvbaal/statuscol.nvim/
+# @see https://nix-community.github.io/nixvim/plugins/statuscol/index.html
 {
   plugins = {
     statuscol = {
