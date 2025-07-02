@@ -1,6 +1,12 @@
 # @see https://github.com/neovim/nvim-lspconfig/
 # @see https://nix-community.github.io/nixvim/plugins/lsp/index.html
+{ pkgs, ... }:
+
 {
+  extraPackages = with pkgs; [
+    vscode-langservers-extracted
+  ];
+
   plugins = {
     lsp = {
       enable = true;

@@ -12,6 +12,7 @@
     ./lualine.nix
     ./modicator.nix
     ./nvim-autopairs.nix
+    ./render-markdown.nix
     ./snacks
     ./statuscol.nix
     ./telescope.nix

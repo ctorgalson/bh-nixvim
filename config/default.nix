@@ -44,6 +44,16 @@
     -- FoldColumn icon colour override
     vim.api.nvim_set_hl(0, "FoldColumn", { fg = "#9399b2" })
 
+    -- ColorColumn colour override
+    -- vim.api.nvim_set_hl(0, 'ColorColumn', { fg = '#fab387' })
+    -- vim.api.nvim_create_autocmd("VimEnter", {
+    --   callback = function()
+    --     vim.schedule(function()
+    --       vim.api.nvim_set_hl(0, 'ColorColumn', { fg = '#fab387' })
+    --     end)
+    --   end,
+    -- })
+
     -- Diagnostics
     vim.diagnostic.config({
       signs = {
@@ -55,7 +65,29 @@
         }
       }
     })
-  '';
+
+    -- Custom folds
+    --
+    -- Examine the parse tree structure with :lua vim.treesitter.inspect_tree()
+    --
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "twig",
+      callback = function()
+        local query_string = [[
+          [
+            (statement_directive)
+              (if_statement)
+            (statement_directive)
+              (for_statement)
+            (statement_directive)
+              (tag_statement)
+            (output_directive)
+          ] @fold
+        ]]
+        vim.treesitter.query.set("twig", "folds", query_string)
+      end,
+    })
+    '';
 
   viAlias = true;
   vimAlias = true;

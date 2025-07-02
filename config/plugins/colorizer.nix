@@ -15,6 +15,17 @@
         ];
         user_default_options = {
           css = true;
+          mode = "virtualtext";
+          names = false;
+          names_custom = false;
+          virtualtext = "■";
+          RGB = true;
+          RGBA = true;
+          RRGGBB = true;
+          RRGGBBAA = true;
+          AARRGGBB = true;
+          rgb_fn = true;
+          hsl_fn = true;
         };
       };
     };
