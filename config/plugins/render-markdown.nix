@@ -1,5 +1,5 @@
-# @see https://github.com/numtostr/comment.nvim/
-# @see https://nix-community.github.io/nixvim/plugins/comment/index.html
+# @see https://github.com/MeanderingProgrammer/render-markdown.nvim
+# @see https://nix-community.github.io/nixvim/plugins/render-markdown/index.html
 {
   plugins = {
     render-markdown = {
