@@ -12,6 +12,7 @@
         };
         indent = {
           enable = true;
+          disable = [ "css" ];
         };
       };
     };

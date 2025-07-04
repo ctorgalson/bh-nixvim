@@ -22,7 +22,15 @@
       end
     end
 
-    -- Filetype-specific indentation settings
+    -- Filetype-specific indentation and comment settings
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "javascript",
+      callback = function()
+        vim.bo.comments = "s1:/*,mb:*,ex:*/,://" -- use a non-default pattern
+        vim.bo.indentexpr = "" -- disable default indentation
+      end,
+    })
+
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "go",
       callback = function()

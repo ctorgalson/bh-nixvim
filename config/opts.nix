@@ -11,12 +11,12 @@
     updatetime = 300;
 
     # Tabs and indents.
-    autoindent = true;  # Copy indent from current line when starting a new line
-    expandtab = true;   # Use spaces instead of tabs
-    shiftwidth = 2;     # Default indentation is 2 spaces
-    smartindent = true; # Smart auto-indenting
-    softtabstop = 2;    # Edit as if tabs are 2 spaces
-    tabstop = 2;        # Display tabs as 2 spaces wide
+    autoindent = true;   # Copy current indent when starting a new line.
+    expandtab = true;    # Use spaces instead of tabs
+    shiftwidth = 2;      # Default indentation is 2 spaces
+    smartindent = false; # Smart auto-indenting for C-like stuff; not useful.
+    softtabstop = 2;     # Edit as if tabs are 2 spaces
+    tabstop = 2;         # Display tabs as 2 spaces wide
 
     # Folding
     fillchars = {
