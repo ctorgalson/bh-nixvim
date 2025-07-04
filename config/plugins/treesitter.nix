@@ -12,7 +12,7 @@
         };
         indent = {
           enable = true;
-          disable = [ "css" ];
+          disable = [ "css" "php" ];
         };
       };
     };
