@@ -1,6 +1,5 @@
+# @see https://github.com/hrsh7th/vscode-langservers-extracted
 # @see https://nix-community.github.io/nixvim/plugins/lsp/servers/cssls/index.html
-{ pkgs, ... }:
-
 {
   extraConfigLua = ''
     --Enable (broadcasting) snippet capability for completion
@@ -11,8 +10,6 @@
       capabilities = capabilities,
     }
   '';
-
-  # extraPackages = with pkgs; [];
 
   plugins = {
     lsp = {
