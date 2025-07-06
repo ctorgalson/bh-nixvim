@@ -7,7 +7,7 @@
     ./precognition.nix
     ./friendly-snippets.nix
     ./gitsigns-nvim.nix
-    ./lsp.nix
+    ./lsp
     ./lsp-lines.nix
     ./lualine.nix
     ./modicator.nix

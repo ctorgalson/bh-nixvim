@@ -3,9 +3,12 @@
 { pkgs, ... }:
 
 {
-  extraPackages = with pkgs; [
-    vscode-langservers-extracted
+  imports = [
+    ./cssls.nix
+    ./html.nix
   ];
+
+  # extraPackages = with pkgs; [];
 
   plugins = {
     lsp = {
@@ -13,10 +16,7 @@
       servers = {
         # None of these seems to need any particular configuration.
         bashls.enable = true;
-        cssls.enable = true;
-        eslint.enable = true;
         gopls.enable = true;
-        html.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
         nixd.enable = true;
