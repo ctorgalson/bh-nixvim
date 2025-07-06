@@ -11,6 +11,7 @@
     ./lsp-lines.nix
     ./lualine.nix
     ./modicator.nix
+    ./neo-tree.nix
     ./nvim-autopairs.nix
     ./render-markdown.nix
     ./snacks

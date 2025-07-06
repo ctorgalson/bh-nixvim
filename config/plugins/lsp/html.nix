@@ -1,6 +1,4 @@
 # @see https://nix-community.github.io/nixvim/plugins/lsp/servers/cssls/index.html
-{ pkgs, ... }:
-
 {
   extraConfigLua = ''
     --Enable (broadcasting) snippet capability for completion
