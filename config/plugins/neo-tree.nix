@@ -4,6 +4,17 @@
   plugins = {
     neo-tree = {
       enable = true;
+      closeIfLastWindow = true;
+      enableDiagnostics = true;
+      enableGitStatus = true;
+      enableModifiedMarkers = true;
+      popupBorderStyle = "rounded";
+      sources = [
+        #"buffers"
+        #"document_symbols"
+        "filesystem"
+        #"git_status"
+      ];
     };
   };
 
