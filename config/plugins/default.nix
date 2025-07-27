@@ -4,6 +4,7 @@
     ./bufferline.nix
     ./colorizer.nix
     ./comment.nix
+    ./codecompanion.nix
     ./precognition.nix
     ./friendly-snippets.nix
     ./gitsigns-nvim.nix
