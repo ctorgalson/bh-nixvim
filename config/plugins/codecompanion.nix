@@ -5,11 +5,6 @@
     codecompanion = {
       enable = true;
       settings = {
-        strategies = {
-          chat = { adapter = "ollama"; };
-          inline = { adapter = "ollama"; };
-          agent = { adapter = "ollama"; };
-        };
         adapters = {
           ollama = {
             __raw = ''
@@ -33,6 +28,17 @@
               end
             '';
           };
+        };
+        opts = {
+          log_level = "TRACE";
+          send_code = true;
+          use_default_actions = true;
+          use_default_prompts = true;
+        };
+        strategies = {
+          chat = { adapter = "ollama"; };
+          inline = { adapter = "ollama"; };
+          agent = { adapter = "ollama"; };
         };
       };
     };
