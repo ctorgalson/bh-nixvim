@@ -7,6 +7,7 @@
     ./codecompanion.nix
     ./precognition.nix
     ./friendly-snippets.nix
+    ./fugitive.nix
     ./gitsigns-nvim.nix
     ./lsp
     ./lsp-lines.nix
