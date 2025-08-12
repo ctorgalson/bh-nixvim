@@ -15,7 +15,8 @@
                   },
                   schema = {
                     model = {
-                      default = 'qwen2.5-coder:latest',
+                      -- default = 'qwen2.5-coder:latest',
+                      default = 'codellama:7b',
                     },
                     num_ctx = {
                       default = 32768,
