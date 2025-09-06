@@ -20,9 +20,6 @@
           enable = true;
           disable = [ "css" "php" ];
         };
-        languageRegister = {
-          njk = "twig";
-        };
       };
     };
   };
