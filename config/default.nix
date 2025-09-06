@@ -22,7 +22,14 @@
       end
     end
 
-    -- Filetype-specific indentation and comment settings
+    -- Filetype-specific syntax, indentation, and comment settings
+    vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+      pattern = "*.njk",
+      callback = function()
+        vim.bo.filetype = "twig"
+      end
+    })
+
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "javascript",
       callback = function()
