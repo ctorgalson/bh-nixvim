@@ -5,6 +5,9 @@
     render-markdown = {
       enable = true;
       settings = {
+        latex = {
+          enabled = false;
+        };
         bullet = {
           icons = [ "⦁ " "◦ " "⦁ " "◦ " ];
           right_pad = 1;
@@ -37,9 +40,6 @@
           width = "block";
         };
         render_modes = [ "n" "c" "t" ];
-        signs = {
-          enabled = true;
-        };
       };
     };
   };
