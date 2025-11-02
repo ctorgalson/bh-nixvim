@@ -5,7 +5,7 @@
     neo-tree = {
       enable = true;
       settings = {
-        close_if_last_window = true;
+        close_if_last_window = false;
         enable_diagnostics = true;
         enable_git_status = true;
         enable_modified_markers = true;
@@ -29,14 +29,34 @@
         };
         buffers = {
           renderers = {
-            directory = [ "indent" "icon" "name" ];
-            file = [ "indent" "icon" "name" "modified" "size" "last_modified" ];
+            directory = [
+              [ "indent" ]
+              [ "icon" ]
+              [ "name" ]
+            ];
+            file = [
+              [ "indent" ]
+              [ "icon" ]
+              [ "name" ]
+              [ "modified" ]
+              [ "size" ]
+              [ "last_modified" ]
+            ];
           };
         };
         git_status = {
           renderers = {
-            directory = [ "indent" "icon" "name" ];
-            file = [ "indent" "icon" "name" "git_status" ];
+            directory = [
+              [ "indent" ]
+              [ "icon" ]
+              [ "name" ]
+            ];
+            file = [
+              [ "indent" ]
+              [ "icon" ]
+              [ "name" ]
+              [ "git_status" ]
+            ];
           };
         };
       };
