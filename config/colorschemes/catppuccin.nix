@@ -22,7 +22,7 @@
           # bufferline
           cmp = true;
           gitsigns = true;
-          # lualine
+          lualine = true;
           native_lsp = {
             enabled = true;
           };
