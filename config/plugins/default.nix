@@ -16,7 +16,7 @@
     ./modicator.nix
     ./neo-tree.nix
     ./nvim-autopairs.nix
-    ./opencode.nix
+    #./opencode.nix
     ./render-markdown.nix
     ./snacks
     ./statuscol.nix
