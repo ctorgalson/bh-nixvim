@@ -20,24 +20,16 @@
               win = {
                 input = {
                   keys = {
-                    "<C-t>" = {
+                    "<S-T>" = {
                       __raw = ''"tab"'';
-                      mode = [ "n" "i" ];
-                    };
-                    "<C-;>" = {
-                      __raw = ''"terminal"'';
                       mode = [ "n" "i" ];
                     };
                   };
                 };
                 list = {
                   keys = {
-                    "<C-t>" = {
+                    "<S-T>" = {
                       __raw = ''"tab"'';
-                      mode = [ "n" "i" ];
-                    };
-                    "<C-;>" = {
-                      __raw = ''"terminal"'';
                       mode = [ "n" "i" ];
                     };
                   };

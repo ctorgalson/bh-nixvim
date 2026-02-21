@@ -2,7 +2,7 @@
   imports = [
     ./bigfile.nix
     ./dashboard.nix
-    #./explorer.nix
+    ./explorer.nix
     ./image.nix
     ./picker
   ];
