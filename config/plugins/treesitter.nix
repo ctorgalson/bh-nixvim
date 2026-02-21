@@ -12,7 +12,9 @@
       enable = true;
       settings = {
         # All grammars enabled by default.
-        folding = true;
+        folding = {
+          enable = true;
+        };
         highlight = {
           enable = true;
         };
