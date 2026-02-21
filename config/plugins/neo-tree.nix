@@ -66,7 +66,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>e";
+      key = "<leader>r";
       action = "<cmd>Neotree toggle<CR>";
       options.desc = "Toggle file browser";
     }
