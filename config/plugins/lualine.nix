@@ -6,7 +6,7 @@
       enable = true;
       settings = {
         options = {
-          # theme = "catppuccin";
+          theme = "auto";
           disabled_filetypes = {
             __unkeyed-1 = "snacks_dashboard";
             __unkeyed-2 = "snacks_picker_list";
