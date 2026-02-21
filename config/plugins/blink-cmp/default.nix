@@ -59,16 +59,19 @@
         };
         signature = {
           enabled = true;
-          trigger = {
-            blocked_trigger_characters = [];
-            blocked_retrigger_characters = [];
-            show_delay_ms = 200;
-            hide_delay_ms = 4000;
-          };
+          # These settings seem obsolete.
+          #
+          # trigger = {
+          #   blocked_trigger_characters = [];
+          #   blocked_retrigger_characters = [];
+          #   show_delay_ms = 200;
+          #   hide_delay_ms = 4000;
+          # };
           window = {
             border = "rounded";
-            winhighlight = "Normal:BlinkCmpSignatureHelp,FloatBorder:BlinkCmpSignatureHelpBorder,Cursor:BlinkCmpSignatureHelp";
+            direction_priority = [ "s" "n" ];
             scrollbar = true;
+            winhighlight = "Normal:BlinkCmpSignatureHelp,FloatBorder:BlinkCmpSignatureHelpBorder,Cursor:BlinkCmpSignatureHelp";
           };
         };
         sources = {
