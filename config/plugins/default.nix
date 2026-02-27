@@ -10,6 +10,7 @@
     ./friendly-snippets.nix
     ./fugitive.nix
     ./gitsigns-nvim.nix
+    ./grug-far.nix
     ./lsp
     ./lsp-lines.nix
     ./lualine.nix
