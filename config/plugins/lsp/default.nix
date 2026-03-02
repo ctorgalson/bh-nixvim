@@ -18,7 +18,8 @@
         marksman.enable = true;
         nixd.enable = true;
         phpactor.enable = true;
-        pylyzer.enable = true;
+        # pylyzer.enable = true;
+        basedpyright.enable = true;
         sqls.enable = true;
         ts_ls.enable = true;
         yamlls.enable = true;
