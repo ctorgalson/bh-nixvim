@@ -11,6 +11,7 @@
       enable = true;
       servers = {
         # None of these seems to need any particular configuration.
+        basedpyright.enable = true;
         bashls.enable = true;
         emmet_language_server.enable = true;
         gopls.enable = true;
@@ -19,7 +20,6 @@
         nixd.enable = true;
         phpactor.enable = true;
         # pylyzer.enable = true;
-        basedpyright.enable = true;
         sqls.enable = true;
         ts_ls.enable = true;
         yamlls.enable = true;
