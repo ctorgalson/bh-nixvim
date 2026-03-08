@@ -6,7 +6,6 @@
     ./colorizer.nix
     ./comment.nix
     #./codecompanion.nix
-    ./precognition.nix
     ./friendly-snippets.nix
     ./fugitive.nix
     ./gitsigns-nvim.nix
@@ -17,7 +16,9 @@
     ./modicator.nix
     ./neo-tree.nix
     ./nvim-autopairs.nix
+    ./nvim-dap
     #./opencode.nix
+    ./precognition.nix
     ./render-markdown.nix
     ./snacks
     ./statuscol.nix
