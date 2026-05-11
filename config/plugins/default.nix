@@ -26,6 +26,6 @@
     ./treesitter.nix
     ./web-devicons.nix
     ./which-key.nix
-    ./whitespace.nix
+    # ./whitespace.nix # supposedly now has an unfree license??
   ];
 }
