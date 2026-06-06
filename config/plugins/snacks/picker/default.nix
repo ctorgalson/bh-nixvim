@@ -11,6 +11,7 @@
         picker = {
           enabled = true;
           layout = {
+            cycle = "false";
             preset = "vertical";
           };
           sources = {
@@ -18,20 +19,10 @@
               # focus = "input";
               auto_close = false;
               win = {
-                input = {
-                  keys = {
-                    "<S-T>" = {
-                      __raw = ''"tab"'';
-                      mode = [ "n" "i" ];
-                    };
-                  };
-                };
                 list = {
                   keys = {
-                    "<S-T>" = {
-                      __raw = ''"tab"'';
-                      mode = [ "n" "i" ];
-                    };
+                    "<C-t>" = [ "tab" ];
+                    "<S-t>" = [ "terminal" ];
                   };
                 };
               };
@@ -134,15 +125,6 @@
     #     silent = true;
     #   };
     # }
-
-    {
-      mode = "n";
-      key = "<leader>fe";
-      action = ''<cmd>lua Snacks.explorer()<cr>'';
-      options = {
-        desc = "File Explorer";
-      };
-    }
 
     {
       mode = "n";

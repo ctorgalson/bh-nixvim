@@ -22,6 +22,20 @@
       end
     end
 
+    -- Ensure Snacks explorer (or other explorers) open with proper signs and
+    -- numbers displayed.
+    vim.api.nvim_create_autocmd("BufEnter", {
+      pattern = "*",
+      callback = function()
+        -- Ensure this only runs on actual editable files, not help, terminal, or explorer panels
+        if vim.bo.buftype == "" and vim.bo.filetype ~= "" then
+          vim.wo.number = true          -- Force line numbers on
+          vim.wo.relativenumber = true   -- Force relative numbers (omit if you prefer fixed)
+          vim.wo.signcolumn = "yes"      -- Force Git signs / LSP column to show
+        end
+      end,
+    })
+
     -- Filetype-specific syntax, indentation, and comment settings
     vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
       pattern = "*.njk",
