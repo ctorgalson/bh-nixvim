@@ -2,8 +2,10 @@
   plugins.chadtree = {
     enable = true;
 
-    theme = {
-      icon_glyph_set = "devicons";
+    settings = {
+      theme = {
+        icon_glyph_set = "devicons";
+      };
     };
   };
 }
