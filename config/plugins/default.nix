@@ -1,11 +1,10 @@
 {
   imports = [
-    #./aider.nix
     ./blink-cmp
     ./bufferline.nix
+    ./chadtree.nix
     ./colorizer.nix
     ./comment.nix
-    #./codecompanion.nix
     ./friendly-snippets.nix
     ./fugitive.nix
     ./gitsigns-nvim.nix
@@ -17,8 +16,6 @@
     ./neo-tree.nix
     ./nvim-autopairs.nix
     ./nvim-dap
-    #./opencode.nix
-    ./precognition.nix
     ./render-markdown.nix
     ./snacks
     ./statuscol.nix
