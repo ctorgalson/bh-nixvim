@@ -30,7 +30,6 @@
         -- Ensure this only runs on actual editable files, not help, terminal, or explorer panels
         if vim.bo.buftype == "" and vim.bo.filetype ~= "" then
           vim.wo.number = true          -- Force line numbers on
-          vim.wo.relativenumber = true   -- Force relative numbers (omit if you prefer fixed)
           vim.wo.signcolumn = "yes"      -- Force Git signs / LSP column to show
         end
       end,
