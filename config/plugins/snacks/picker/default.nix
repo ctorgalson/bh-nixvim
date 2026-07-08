@@ -16,8 +16,10 @@
           };
           sources = {
             explorer = {
-              # focus = "input";
               auto_close = false;
+              finder = "explorer";
+              # focus = "input";
+              follow_file = true;
               win = {
                 list = {
                   keys = {
