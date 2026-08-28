@@ -2,6 +2,7 @@
   imports = [
     ./blink-cmp
     ./bufferline.nix
+    ./ccc.nix
     ./colorizer.nix
     ./comment.nix
     ./friendly-snippets.nix
