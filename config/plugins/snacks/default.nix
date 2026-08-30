@@ -3,7 +3,6 @@
     ./bigfile.nix
     ./dashboard.nix
     ./explorer.nix
-    ./image.nix
     ./picker
   ];
 
