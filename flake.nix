@@ -3,7 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    nixvim.url = "github:nix-community/nixvim";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
@@ -20,7 +23,7 @@
       perSystem =
         { system, ... }:
         let
-          pkgs = import nixvim.inputs.nixpkgs { inherit system; config.allowUnfree = true; };
+          pkgs = import inputs.nixpkgs { inherit system; config.allowUnfree = true; };
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
@@ -43,6 +46,8 @@
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
+
+          formatter = pkgs.nixfmt;
         };
     };
 }

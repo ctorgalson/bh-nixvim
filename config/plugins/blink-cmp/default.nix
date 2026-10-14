@@ -16,6 +16,7 @@
         };
         cmdline = {
           enabled = true;
+          sources = [ "cmdline" "path" ];
           keymap = {
             preset = "super-tab";
           };
@@ -83,7 +84,6 @@
             "emoji"
             "spell"
           ];
-          cmdline = [ ];
           providers = {
             buffer = {
               max_items = 10;

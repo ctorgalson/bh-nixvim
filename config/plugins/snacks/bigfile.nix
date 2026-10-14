@@ -14,7 +14,7 @@
         end)
 
         -- Disable matchparen
-        vim.cmd("let g:loaded_matchparen = 1")
+        vim.cmd("NoMatchParen")
 
         -- Disable cursor line and column
         vim.cmd("setlocal nocursorline nocursorcolumn")

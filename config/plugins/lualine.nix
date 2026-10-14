@@ -8,8 +8,7 @@
         options = {
           theme = "auto";
           disabled_filetypes = {
-            __unkeyed-1 = "snacks_dashboard";
-            __unkeyed-2 = "snacks_picker_list";
+            __unkeyed-1 = "snacks_picker_list";
           };
           section_separators = "";
           component_separators = "";

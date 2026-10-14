@@ -20,9 +20,9 @@
         };
         indent = {
           enable = true;
-          disable = [ "css" "php" ];
         };
       };
+      indent.disable = [ "css" "php" ];
     };
   };
 }

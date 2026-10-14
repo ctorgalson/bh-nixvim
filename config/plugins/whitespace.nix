@@ -10,7 +10,6 @@
           "blink-cmp-signature"
           "checkhealth"
           "fzf"
-          "snacks_dashboard"
           "TelescopePrompt"
         ];
         return_cursor = false;

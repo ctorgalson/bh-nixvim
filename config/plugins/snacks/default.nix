@@ -1,7 +1,6 @@
 {
   imports = [
     ./bigfile.nix
-    ./dashboard.nix
     ./explorer.nix
     ./picker
   ];

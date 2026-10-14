@@ -1,6 +1,4 @@
 {
-  imports = [ ];
-
   # Set up an extra plugin per-file as follows.
   #
   # The easiest way to get the hash value is to stick in a valid sha256 hash,

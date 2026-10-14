@@ -11,7 +11,7 @@
         picker = {
           enabled = true;
           layout = {
-            cycle = "false";
+            cycle = false;
             preset = "vertical";
           };
           sources = {
@@ -30,34 +30,34 @@
               };
             };
           };
-        };
-        actions = {
-          calculate_file_truncate_width.__raw = ''
-            function(self)
-              local width = self.list.win:size().width
-              self.opts.formatters.file.truncate = width - 6
-            end
-            '';
-        };
-        win = {
-          list = {
-            on_buf.__raw = ''
+          actions = {
+            calculate_file_truncate_width.__raw = ''
               function(self)
-                self:execute 'calculate_file_truncate_width'
+                local width = self.list.win:size().width
+                self.opts.formatters.file.truncate = width - 6
               end
               '';
           };
-          preview = {
-            on_buf.__raw = ''
-              function(self)
-                self:execute 'calculate_file_truncate_width'
-              end
-              '';
-            on_close.__raw = ''
-              function(self)
-                self:execute 'calculate_file_truncate_width'
-              end
-              '';
+          win = {
+            list = {
+              on_buf.__raw = ''
+                function(self)
+                  self:execute 'calculate_file_truncate_width'
+                end
+                '';
+            };
+            preview = {
+              on_buf.__raw = ''
+                function(self)
+                  self:execute 'calculate_file_truncate_width'
+                end
+                '';
+              on_close.__raw = ''
+                function(self)
+                  self:execute 'calculate_file_truncate_width'
+                end
+                '';
+            };
           };
         };
       };

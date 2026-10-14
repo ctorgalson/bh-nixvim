@@ -3,7 +3,7 @@
 {
   plugins = {
     neo-tree = {
-      enable = true;
+      enable = false;
       settings = {
         close_if_last_window = false;
         enable_diagnostics = true;

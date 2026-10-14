@@ -23,8 +23,8 @@
       diff = "╱";
       eob = " ";
       fold = " ";
-      foldclose = "󰅂";
-      foldopen = "󰅀";
+      foldclose = "▸";
+      foldopen = "▾";
       foldsep = " ";
       horiz = "━";
       horizup = "┻";
