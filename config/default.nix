@@ -103,7 +103,7 @@
         vim.treesitter.query.set("twig", "folds", query_string)
       end,
     })
-    '';
+  '';
 
   viAlias = true;
   vimAlias = true;

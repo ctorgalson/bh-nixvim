@@ -9,7 +9,12 @@
           enabled = false;
         };
         bullet = {
-          icons = [ "⦁ " "◦ " "⦁ " "◦ " ];
+          icons = [
+            "⦁ "
+            "◦ "
+            "⦁ "
+            "◦ "
+          ];
           right_pad = 1;
         };
         code = {
@@ -39,7 +44,11 @@
           sign = false;
           width = "block";
         };
-        render_modes = [ "n" "c" "t" ];
+        render_modes = [
+          "n"
+          "c"
+          "t"
+        ];
       };
     };
   };

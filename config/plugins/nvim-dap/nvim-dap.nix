@@ -5,7 +5,7 @@
 {
   extraPackages = with pkgs; [
     vscode-extensions.xdebug.php-debug
-    nodejs_24  # Required for running the PHP debug adapter
+    nodejs_24 # Required for running the PHP debug adapter
   ];
 
   plugins = {
@@ -26,10 +26,10 @@
           name = "Listen for Xdebug (DDEV)";
           type = "php";
           request = "launch";
-          port = 9003;  # Xdebug 3 default port
+          port = 9003; # Xdebug 3 default port
           # Map DDEV container paths to local workspace
           pathMappings = {
-            "/var/www/html" = ''''${workspaceFolder}'';
+            "/var/www/html" = "\${workspaceFolder}";
           };
         }
         {
