@@ -1,0 +1,76 @@
+name: verify-and-release
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  verify:
+    # Branch pushes, PRs, and non-release tags: build and test, publish nothing.
+    # Skipped for v* tags, where the release job builds the same thing.
+    if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v16
+      - run: nix flake check --no-build
+      - run: nix build .#default
+      - run: nix build .#checks.x86_64-linux.default
+
+  release:
+    # Only for v* tags: build, sign, and publish the signed binary cache.
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    runs-on: ubuntu-latest
+    permissions:
+      # Needed so the preinstalled gh cli can create the release with github.token
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v16
+      - run: nix build .#default
+      - name: Write the signing key to a temp file
+        env:
+          BHVIM_CACHE_KEY: ${{ secrets.BHVIM_CACHE_KEY }}
+        run: |
+          umask 077
+          printf '%s\n' "$BHVIM_CACHE_KEY" > "$RUNNER_TEMP/bh-nixvim-cache-key.sec"
+      - name: Sign the built store paths
+        run: |
+          key_file="$RUNNER_TEMP/bh-nixvim-cache-key.sec"
+          out="$(readlink -f result)"
+          nix store sign --recursive --key-file "$key_file" "$out"
+      - name: Copy the signed paths into a local binary cache
+        run: |
+          out="$(readlink -f result)"
+          nix copy --to "file://$PWD/cache?produce-dot-narinfo=true" "$out"
+      - name: Create the cache tarball
+        run: tar -czf bh-nixvim-cache.tar.gz cache
+      - name: Compute the public key
+        run: |
+          nix key convert-secret-to-public \
+            < "$RUNNER_TEMP/bh-nixvim-cache-key.sec" \
+            > "$RUNNER_TEMP/bh-nixvim-cache-key.pub"
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha="$(sha256sum bh-nixvim-cache.tar.gz | cut -d' ' -f1)"
+          pubkey="$(cat "$RUNNER_TEMP/bh-nixvim-cache-key.pub")"
+          gh release create "$GITHUB_REF_NAME" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$GITHUB_REF_NAME" \
+            --notes "Signed local binary cache for bh-nixvim, built on x86_64-linux.
+
+          **Public key** — add to \`nix.settings.trusted-public-keys\`:
+
+          \`\`\`
+          $pubkey
+          \`\`\`
+
+          **Tarball sha256** (\`bh-nixvim-cache.tar.gz\`):
+
+          \`\`\`
+          $sha
+          \`\`\`
+          " \
+            bh-nixvim-cache.tar.gz
