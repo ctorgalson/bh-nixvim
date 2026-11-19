@@ -104,15 +104,18 @@ GitHub release, with the public key and tarball sha256 in the notes.
 
 ```bash
 # Nix >= 2.19
-nix key generate-secret --key-name bh-nixvim
+nix key generate-secret --key-name bh-nixvim | base64 -w0
 
 # Older Nix
 nix-store --generate-binary-cache-key bh-nixvim cache-key.sec cache-key.pub
+base64 -w0 cache-key.sec
 ```
 
-- Store the private key (the secret printed by `nix key generate-secret`, or
-  the contents of `cache-key.sec`) verbatim in the Actions secret
-  `BHVIM_CACHE_KEY`.
+- GitHub secret values can't contain the colon in a nix signing key line, so
+  store the private key **base64-wrapped** in the `BHVIM_CACHE_KEY` secret of
+  the `release` environment — the `release` job decodes it before signing.
+  Check the paste with `base64 -d`: it must print the original
+  `bh-nixvim:<base64>` line.
 - Derive the public key with
   `nix key convert-secret-to-public < <private-key-file>` (the older
   `nix-store` form writes it directly to `cache-key.pub`). CI derives and
