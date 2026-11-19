@@ -22,7 +22,10 @@
           enable = true;
         };
       };
-      indent.disable = [ "css" "php" ];
+      indent.disable = [
+        "css"
+        "php"
+      ];
     };
   };
 }

@@ -16,7 +16,10 @@
         };
         cmdline = {
           enabled = true;
-          sources = [ "cmdline" "path" ];
+          sources = [
+            "cmdline"
+            "path"
+          ];
           keymap = {
             preset = "super-tab";
           };
@@ -54,9 +57,18 @@
         };
         keymap = {
           preset = "super-tab";
-          "<C-space>" = [ "show_documentation" "fallback" ];
-          "<C-u>" = [ "scroll_documentation_up" "fallback" ];
-          "<C-d>" = [ "scroll_documentation_down" "fallback" ];
+          "<C-space>" = [
+            "show_documentation"
+            "fallback"
+          ];
+          "<C-u>" = [
+            "scroll_documentation_up"
+            "fallback"
+          ];
+          "<C-d>" = [
+            "scroll_documentation_down"
+            "fallback"
+          ];
         };
         signature = {
           enabled = true;
@@ -70,7 +82,10 @@
           # };
           window = {
             border = "rounded";
-            direction_priority = [ "s" "n" ];
+            direction_priority = [
+              "s"
+              "n"
+            ];
             scrollbar = true;
             winhighlight = "Normal:BlinkCmpSignatureHelp,FloatBorder:BlinkCmpSignatureHelpBorder,Cursor:BlinkCmpSignatureHelp";
           };
