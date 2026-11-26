@@ -1,9 +1,15 @@
 {
+  extraConfigLua = ''
+    local backupdir = vim.fn.stdpath("state") .. "/backup"
+    vim.fn.mkdir(backupdir, "p")
+    vim.opt.backupdir = backupdir .. "//"
+  '';
+
   opts = {
     # Backups.
     backup = true;
-    # writebackup and backupdir values are defaults.
     writebackup = true;
+    # backupdir defined in extraConfigLua
 
     breakindent = true;
     clipboard = "unnamedplus";
