@@ -1,5 +1,11 @@
 {
   opts = {
+    # Backups.
+    backup = true;
+    # writebackup and backupdir values are defaults.
+    writebackup = true;
+    backupdir = "$HOME/.local/state/nvim/backup//";
+
     breakindent = true;
     clipboard = "unnamedplus";
     colorcolumn = "80";
